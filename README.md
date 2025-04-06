@@ -8,6 +8,17 @@ A utility library to map HTML to Pug equivalent, inspired by and partly ported f
 
 Examples can be found within ./examples/
 
+## Running the tests
+
+```bash
+go test -v ./test/...
+```
+Note: some tests are failing as I fix the issues with the port, so I've added a flag to skip
+
+## Issues
+
+Work on html2pug-go is currently ongoing, so YMMV - feel free to raise issues or submit a PR (with supporting tests)
+
 ## Todo
 
 - Fix unit tests (doSkip has been added to failing tests)
