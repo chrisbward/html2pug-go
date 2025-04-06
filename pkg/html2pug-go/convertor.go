@@ -17,11 +17,11 @@ type Convertor struct {
 	Writer               *entities.IWriter
 }
 
-func NewConvertor(options *entities.Html2JadeConvertorOptions, writer *entities.IWriter) (convertor entities.IConvertor) {
+func NewConvertor(options *entities.Html2JadeConvertorOptions) (convertor entities.IConvertor) {
 
 	convertor = &Convertor{
 		Options: options,
-		Writer:  writer,
+		Writer:  options.Writer,
 	}
 
 	return

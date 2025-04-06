@@ -38,9 +38,11 @@ type Html2JadeConvertorOptions struct {
 	WriterOptions    *WriterOptions
 	InputType        ProgramInputType
 	OutDirectoryPath string
-	Converter        IConvertor
-	Output           IOutput
-	Parser           IParser
+
+	Parser    *IParser
+	Converter *IConvertor
+	Output    *IStringWriter
+	Writer    *IWriter
 }
 type Html2JadeConvertorConvertDocumentCallback func(err error, jadeOutput string)
 

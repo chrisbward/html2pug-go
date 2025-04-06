@@ -2227,19 +2227,13 @@ html
 
 		t.Run(tc.Desc, func(t *testing.T) {
 
-			parser := pkg.NewParser(tc.Options)
-			// output := pkg.NewOutput(tc.Options)
-			stringOutput := pkg.NewStringOutput(tc.Options)
-			writer := pkg.NewWriter(tc.Options)
-			convertor := pkg.NewConvertor(tc.Options, &writer)
-
-			jadeConvertor := pkg.NewHtml2JadeConvertor((*entities.IStringWriter)(&stringOutput), &convertor, &writer, &parser)
+			jadeConvertor := pkg.NewHtml2PugConvertor(tc.Options)
 			// jadeConvertor.Convert(tc.SourceHTML, (*entities.IStringWriter)(&stringOutput), tc.Options)
 
 			callback := func(err error, jadeOutput string) {
 				assert.Equal(t, tc.ExpectedJade, jadeOutput)
 			}
-			jadeConvertor.ConvertHTML(tc.SourceHTML, tc.Options, (*entities.Html2JadeConvertorConvertDocumentCallback)(&callback))
+			jadeConvertor.ConvertHTML(tc.SourceHTML, (entities.Html2JadeConvertorConvertDocumentCallback)(callback))
 
 		})
 	}

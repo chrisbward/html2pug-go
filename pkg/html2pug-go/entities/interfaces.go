@@ -7,7 +7,7 @@ import (
 )
 
 type IHtml2JadeConvertor interface {
-	ConvertHTML(html string, options *Html2JadeConvertorOptions, callback *Html2JadeConvertorConvertDocumentCallback)
+	ConvertHTML(html string, callback Html2JadeConvertorConvertDocumentCallback)
 }
 
 type IStringWriter interface {
