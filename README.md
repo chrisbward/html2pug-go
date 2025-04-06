@@ -4,8 +4,13 @@
 
 A utility library to map HTML to Pug equivalent, inspired by and partly ported from [html2jade](https://github.com/donpark/html2jade)
 
-
-
 ## Using the library
 
 Examples can be found within ./examples/
+
+## Todo
+
+- Fix unit tests (doSkip has been added to failing tests)
+- Support rendering of partials
+- Increase coverage of unit tests
+- CLI app
