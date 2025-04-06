@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/chrisbward/html2pug-go/internal/util"
 	"github.com/chrisbward/html2pug-go/pkg/html2pug-go/entities"
+	"github.com/chrisbward/html2pug-go/pkg/html2pug-go/util"
 	"golang.org/x/net/html"
 )
 
