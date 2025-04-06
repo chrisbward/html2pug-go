@@ -1,6 +1,6 @@
 package pkg
 
-import "github.com/chrisbward/html2pug-go/pkg/entities"
+import "github.com/chrisbward/html2pug-go/pkg/html2pug-go/entities"
 
 type StreamOutput struct {
 	Output

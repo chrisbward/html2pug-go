@@ -3,7 +3,7 @@ package pkg
 import (
 	"io"
 
-	"github.com/chrisbward/html2pug-go/pkg/entities"
+	"github.com/chrisbward/html2pug-go/pkg/html2pug-go/entities"
 	html "golang.org/x/net/html"
 )
 

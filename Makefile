@@ -1,3 +1,3 @@
 test:
 	@echo "+ $@"
-	@bash -c "go test -v ./pkg/..."
+	@bash -c "go test -v ./test/..."

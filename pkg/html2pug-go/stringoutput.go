@@ -3,7 +3,7 @@ package pkg
 import (
 	"strings"
 
-	"github.com/chrisbward/html2pug-go/pkg/entities"
+	"github.com/chrisbward/html2pug-go/pkg/html2pug-go/entities"
 )
 
 type StringOutput struct {

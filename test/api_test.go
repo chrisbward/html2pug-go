@@ -3,8 +3,8 @@ package pkg_test
 import (
 	"testing"
 
-	"github.com/chrisbward/html2pug-go/pkg"
-	"github.com/chrisbward/html2pug-go/pkg/entities"
+	pkg "github.com/chrisbward/html2pug-go/pkg/html2pug-go"
+	"github.com/chrisbward/html2pug-go/pkg/html2pug-go/entities"
 	"github.com/sirupsen/logrus"
 	assert "github.com/stretchr/testify/assert"
 	_ "go.uber.org/mock/gomock"
