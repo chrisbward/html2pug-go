@@ -1,5 +1,5 @@
 # html2pug-go (experimental)
 
-![Gopher and Pug working on HTML](assets/go-pug-html.png)
+<img src="assets/go-pug-html.png" alt="Gopher and Pug working on HTML" style="width: 512px; height: 512px;" />
 
 A utility library to map HTML to Pug equivalent, inspired by and partly ported from [html2jade](https://github.com/donpark/html2jade)
